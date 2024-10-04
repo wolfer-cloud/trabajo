@@ -1,0 +1,177 @@
+/* Estilo global */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+.container {
+    width: 100%;
+    max-width: 400px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+/* Títulos */
+h1 {
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #333;
+}
+
+/* Etiquetas */
+label {
+    display: block;
+    margin: 10px 0 5px;
+    text-align: left;
+    font-size: 14px;
+    color: #333;
+}
+
+/* Inputs */
+input[type="text"], 
+input[type="email"], 
+input[type="password"], 
+input[type="date"],
+select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+input[type="submit"], 
+button {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    background-color: #007bff;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+button:hover, 
+input[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+/* Botón de cancelar o alternativo */
+button.cancelar {
+    background-color: #dc3545;
+}
+
+button.cancelar:hover {
+    background-color: #c82333;
+}
+
+a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Pie de página en el formulario de login y registro */
+.container p {
+    font-size: 12px;
+    color: #666;
+}
+
+/* Estilo del dashboard */
+.dashboard {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.dashboard h1 {
+    font-size: 26px;
+    color: #333;
+}
+
+.dashboard p {
+    font-size: 16px;
+    margin-bottom: 15px;
+    color: #666;
+}
+
+.dashboard a {
+    color: #dc3545;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.dashboard a:hover {
+    text-decoration: underline;
+}
+
+/* Encabezado superior (para las páginas de login y registro) */
+header {
+    background-color: #002855;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    margin-bottom: 30px;
+}
+
+header h2 {
+    font-size: 20px;
+    margin: 0;
+}
+
+header img {
+    height: 50px;
+    display: block;
+    margin: 0 auto 10px;
+}
+
+/* Pie de página estilo tarjeta */
+footer {
+    background-color: #002855;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    font-size: 12px;
+}
+
+footer div {
+    display: inline-block;
+    margin: 0 20px;
+}
+
+footer div h3 {
+    font-size: 14px;
+    margin: 0 0 10px;
+}
+
+footer div p {
+    margin: 5px 0;
+}
+
+@media (max-width: 768px) {
+    .container {
+        max-width: 90%;
+    }
+
+    .dashboard {
+        max-width: 90%;
+    }
+}
